@@ -34,7 +34,7 @@ From yuor machine point your browser to:
 
 * Magento frontend: http://127.0.0.1:8080
 * Magento admin panel: http://127.0.0.1:8080/admin
-* PhpMyAdmin:  http://localhost:8080/phpmyadmin/
+* PhpMyAdmin:  http://127.0.0.1:8080/phpmyadmin/
 * Webmin: http://127.0.0.1:10100
 
 
