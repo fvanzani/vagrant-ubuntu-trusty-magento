@@ -17,7 +17,7 @@ Install on your machine:
 
 ```
 git clone https://github.com/wansoft/vagrant-ubuntu-trusty-magento.git
-vagrant-ubuntu-trusty-magento
+cd vagrant-ubuntu-trusty-magento
 vagrant up
 ```
 
