@@ -1,0 +1,17 @@
+{
+    "name": "mycompany/mypackage",
+    "description": "my project",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "My Name",
+            "email": "myname@mycompany.com"
+        }
+    ],
+    "extra": {
+        "magento-root-dir": "http"
+    }
+}

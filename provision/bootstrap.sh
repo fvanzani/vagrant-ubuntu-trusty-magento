@@ -3,41 +3,40 @@
 # change current directory to provision directory ($1 passed by Vagrantfile)
 if [ -n "$1" ]; then
     cd $1
-    exit
 fi
 
 # load configuration variables
 source _config.sh
 
-# folders setup
+# create dirs
 mkdir -p ${DOCUMENT_ROOT}
 
 # update packages
 apt-get update
 
 # misc packages setup
-source _misc.sh
+cd ${PROVISION_DIR} && source _misc.sh
 
 # apache setup
-source _apache.sh
+cd ${PROVISION_DIR} && source _apache.sh
 
 # php setup
-source _php.sh
+cd ${PROVISION_DIR} && source _php.sh
 
 # mysql setup
-source _mysql.sh
+cd ${PROVISION_DIR} && source _mysql.sh
 
 # phpmyadmin setup
-source _phpmyadmin.shphpmyadmin
+cd ${PROVISION_DIR} && source _phpmyadmin.sh
 
 # development tools: composer, n98-magerun, ecc
-source _tools.sh
+cd ${PROVISION_DIR} && source _tools.sh
 
 # magento setup
-source _magento.sh
+cd ${PROVISION_DIR} && source _magento.sh
 
 # composer setup
-source _composer.sh
+cd ${PROVISION_DIR} && source _composer.sh
 
 # webmin setup
-source _webmin.sh
+cd ${PROVISION_DIR} && source _webmin.sh

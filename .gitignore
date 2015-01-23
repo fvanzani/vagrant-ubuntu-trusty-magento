@@ -1,4 +1,7 @@
 .modgit/
 .idea/
+.vagrant
+backups
 http/
-
+magento/
+magento-1.9.1.0.tar.gz

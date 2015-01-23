@@ -8,6 +8,8 @@ apt-get install -y mcrypt
 apt-get install -y htop
 
 apt-get install -y nodejs
+apt-get install -y npm
+
 npm install -g bower grunt-cli
 
 #apt-get install -y openssl
