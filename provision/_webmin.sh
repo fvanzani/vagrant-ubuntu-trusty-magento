@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+source _config.sh
 
 echo 'deb http://download.webmin.com/download/repository sarge contrib' >> /etc/apt/sources.list
 echo 'deb http://webmin.mirror.somersettechsolutions.co.uk/repository sarge contrib' >> /etc/apt/sources.list

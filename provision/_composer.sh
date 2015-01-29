@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+source _config.sh
 
 cd ${PROJECT_DIR}
 

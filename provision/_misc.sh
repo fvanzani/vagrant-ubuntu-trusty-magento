@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+source _config.sh
 
 apt-get install -y imagemagick
 apt-get install -y curl

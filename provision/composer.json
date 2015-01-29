@@ -11,6 +11,12 @@
             "email": "myname@amyvendor.com"
         }
     ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packages.firegento.com"
+        }
+    ],
     "extra": {
         "magento-root-dir": "http/",
         "magento-deploystrategy": "symlink",

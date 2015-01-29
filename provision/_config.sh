@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+
 PROJECT_DIR=/vagrant/
 DOCUMENT_ROOT=/vagrant/http/
 PROVISION_DIR=/vagrant/provision/

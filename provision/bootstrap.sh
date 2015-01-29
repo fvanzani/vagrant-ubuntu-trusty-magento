@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+source _config.sh
 
 # change current directory to provision directory ($1 passed by Vagrantfile)
 if [ -n "$1" ]; then

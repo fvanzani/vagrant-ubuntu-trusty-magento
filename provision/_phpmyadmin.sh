@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+source _config.sh
 
 debconf-set-selections <<< 'phpmyadmin phpmyadmin/dbconfig-install boolean true'
 debconf-set-selections <<< 'phpmyadmin phpmyadmin/app-password-confirm password ${MYSQL_ROOT_PASSWORD}'

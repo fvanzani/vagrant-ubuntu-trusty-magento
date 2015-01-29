@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+source _config.sh
 
 echo "********** MAGENTO **********";
 
