@@ -5,7 +5,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.box = "ubuntu/trusty64"
 
-  config.vm.provision :shell, :path => "provision/bootstrap.sh", :args => '/vagrant/provision/'
+  config.vm.provision :shell, :path => "provision/bootstrap.sh", :args => ['/vagrant/provision/']
 
   config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'"
 

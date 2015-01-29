@@ -3,7 +3,7 @@ A shell script to bootstrap a Vagrant machine based on Ubuntu Trusty 64 bit for 
 
 * Create a simple base Magento CE 1.9 installation on a development machine
 * Runs Ubuntu Trusty 14.04 LTS 64 bit
-* Web server Apache
+* Web Server Apache
 * Mysql v 5.6
 * PHP v 5.x (5.5)
 * Magento CE v 1.9.1.0 

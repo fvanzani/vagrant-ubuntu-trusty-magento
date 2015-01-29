@@ -5,6 +5,7 @@ if [ -n "$1" ]; then
     cd $1
 fi
 
+
 # load configuration variables
 source _config.sh
 
