@@ -1,0 +1,37 @@
+{
+    "name": "myvendor/mypackage",
+    "description": "my project",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "My Name",
+            "email": "myname@amyvendor.com"
+        }
+    ],
+    "extra": {
+        "magento-root-dir": "http/",
+        "magento-deploystrategy": "symlink",
+        "magento-force": true
+    },
+    "scripts": {
+        "pre-install-cmd": [
+            "mkdir -p http"
+        ],
+        "post-install-cmd": [
+            "cd http && modman init"
+        ],
+        "pre-update-cmd": [
+            "mkdir -p backups && cd http && n98-magerun.phar db:dump -c gzip --strip='@stripped' --add-time --force && mv *.sql.gz ../backups || :",
+            "cd http && n98-magerun.phar sys:maintenance --on"
+        ],
+        "post-update-cmd": [
+            "cd http && n98-magerun.phar cache:clean",
+            "cd http && n98-magerun.phar sys:setup:run",
+            "cd http && n98-magerun.phar sys:maintenance --off"
+        ]
+    }
+
+}
