@@ -39,4 +39,4 @@ cd ${PROVISION_DIR} && source _magento.sh
 cd ${PROVISION_DIR} && source _composer.sh
 
 # webmin setup
-cd ${PROVISION_DIR} && source _webmin.sh
+#cd ${PROVISION_DIR} && source _webmin.sh

@@ -1,4 +1,4 @@
-# Bootstrap Vagrant Ubuntu 14.04 Magento
+# Bootstrap Vagrant Ubuntu 14.04 Magento (beta)
 A shell script to bootstrap a Vagrant machine based on Ubuntu Trusty 64 bit for developing Magento CE projects.
 
 * Create a simple base Magento CE 1.9 installation on a development machine
