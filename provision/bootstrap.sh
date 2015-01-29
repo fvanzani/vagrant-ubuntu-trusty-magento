@@ -10,6 +10,9 @@ fi
 # load configuration variables
 source _config.sh
 
+# create swapfile
+cd ${PROVISION_DIR} && source _swap.sh
+
 # create dirs
 mkdir -p ${DOCUMENT_ROOT}
 
